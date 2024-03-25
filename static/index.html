@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RLAIF for Text Classification Demo</title>
+</head>
+
+<body>
+    <h1>RLAIF for Text Classification Demo</h1>
+    <div>
+        <textarea id="textInput" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+        <br>
+        <button onclick="sendTextForPrediction()">Predict</button>
+    </div>
+    Prediction Result:
+    <div id="predictionResult">
+    </div>
+    <div>
+        <br>
+        Different from your Classification? Annotate it as:
+        <button onclick="sendAnnotationForUpdate('alt.atheism')">Atheism</button>
+        <button onclick="sendAnnotationForUpdate('soc.religion.christian')">Christian</button>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+
+</html>
